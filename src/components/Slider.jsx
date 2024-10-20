@@ -1,5 +1,5 @@
 import React from 'react'
-import slider1 from '../Assets/images/iacss1.png'
+import slider1 from '../Assets/images/sihobanner.png'
 import slider2 from '../Assets/images/iacss4.png'
 import slider3 from '../Assets/images/iacss3.png'
 import 'bootstrap/dist/css/bootstrap.min.css';

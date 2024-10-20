@@ -1,64 +1,37 @@
-import React from 'react'
-import map from '../../Assets/images/map1519647479-1745x2048.webp'
-const Why_choose_us = () => {
+import React from 'react';
+import { Link } from 'react-router-dom'
+import whychoose from '../../Assets/images/syho7.jpeg'
+const WhyChooseUs = () => {
     return (
         <div>
-            <div class="container-fluid bg-light about  py-5">
-                <div class="container pb-5">
-                    <div class="row pt-5 g-5">
-                        <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
-                            <div class="about-item-content bg-white rounded p-5 h-100">
-                                <h4 class="whychooseheading">Why Integrated ayush council ?</h4>
-                                <h2 class="mt-3 mb-4 subheading">Comprehensive Solutions for Holistic Well-being</h2>
-                                <p className='ourptext'> The AYUSH market in 2020 reached a staggering ₹1,49,451 crore, marking a remarkable six-fold growth since 2014. India’s AYUSH exports amounted to ₹12,715 crore in the same year. AYUSH encompasses Ayurveda, Yoga, Naturopathy, Unani, Siddha, and Homeopathy, focusing on preventing and curing various disorders. The AYUSH health infrastructure includes 12,000 AYUSH hospitals and 37,000 AYUSH dispensaries. The Integrated AYUSH Council convenes experts, policymakers, researchers, and stakeholders to shape the future of AYUSH systems in India. </p>
-                                <h4 class="whychooseheading">Our Reach</h4>
-                                <p className='ourptext'> In keeping with its philosophy of ‘Real Work, Real Change’, the Integrated AYUSH Council provides a strong platform for the overall development and promotion of AYUSH at the national and international levels. </p>
-                                <a class="btn btn-primary rounded-pill  mt-4 py-3 px-5" href="#">More Information</a>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
-                            <div class="bg-white rounded p-5 h-100">
-                                <div class="row g-4 justify-content-center">
-                                    <div class="col-12">
-                                        <div class="rounded bg-light">
-                                            <img src={map} class="map rounded " alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="counter-item bg-light rounded p-3 h-100">
-                                            <div class="counter-counting">
-                                                <span class="whychooseheading fs-2 fw-bold" data-toggle="counter-up">9</span>
-                                                <span class=" whychooseheading ">+</span>
-                                            </div>
-                                            <h4 class="mb-0 text-dark mainheading">States</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="counter-item bg-light rounded p-3 h-100">
-                                            <div class="counter-counting">
-                                                <span class="whychooseheading fs-2 fw-bold" data-toggle="counter-up">25</span>
-                                                <span class="whychooseheading">+</span>
-                                            </div>
-                                            <h4 class="mb-0 text-dark mainheading">Countries</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="counter-item bg-light rounded p-3 h-100">
-                                            <div class="counter-counting">
-                                                <span class="whychooseheading fs-2 fw-bold" data-toggle="counter-up">42,507</span>
-                                                <span class="whychooseheading">+</span>
-                                            </div>
-                                            <h4 class="mb-0 text-dark mainheading">Members</h4>
-                                        </div>
-                                    </div>
+            <div className='bg-light'>
+                <div className="container-fluid about py-5">
+                    <div className="container pb-5">
+                        <div className="row pt-5">
+                            <div className="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                                <div className="about-item-content  rounded p-5 h-100">
+                                    <h4 className="whychooseheading">Why Shri Yog Health Organization?</h4>
+                                    <h2 className="mt-3 mb-4 subheading">Empowering Health for Every Child</h2>
+                                    <p className='ourptext'>
+                                        Shri Yog Health Organization is committed to ensuring the health and well-being of children in rural areas. Our latest initiative, the "Nidan" project, aims to provide comprehensive health solutions, including preventive homeopathy medicines and routine medical check-ups for just ₹251 a year. We believe in fostering not only physical health but also mental well-being through specialized yoga and meditation camps tailored for children's developmental needs.
+                                    </p>
+                                    <p className='ourptext'>
+                                        By recruiting coordinators and AYUSH doctors at the district level, we aim to establish diagnosis and consultation centers to deliver our services effectively. In alignment with our philosophy of community service, we will also extend these health initiatives to government schools at no cost, ensuring that every child has access to essential health care.
+                                    </p>
+                                    <Link className="btn btn-primary rounded-pill mt-4 py-3 px-5" to="/aboutus">More Information</Link>
                                 </div>
+                            </div>
+                            <div className="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                                <div className="rounded p-5">
+                                    <img src={whychoose} alt='whychoose' className='img-fluid chooseus' />
+                              </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Why_choose_us
+export default WhyChooseUs;

@@ -25,7 +25,6 @@ import EventNews from './pages/media/EventNews'
 import EventVideo from './pages/media/EventVideo'
 import Gallery from './pages/media/Gallery'
 import PublishedNews from './pages/media/PublishedNews'
-import MediaRegistration from './pages/media/MediaRegistration'
 import GoverningBody from './pages/administrative/GoverningBody'
 import Ourteam from './pages/administrative/Ourteam'
 import Leadership from './pages/administrative/Leadership'
@@ -35,8 +34,9 @@ import AllMember from './pages/administrative/AllMember'
 import MemberDetails from './pages/administrative/MemberDetails'
 import MembershipForm from './pages/membership/MembershipForm'
 import Opdslip from './components/Opdslip'
-
-
+import All_Sectors from './pages/sectors/All_Sectors'
+import Newsandupdate from './pages/media/Newsandupdate'
+import Stakesholder from './components/Stakesholder'
 const App = () => {
   return (
     <div>
@@ -46,6 +46,7 @@ const App = () => {
            <Route path='/' element={<Home />} />
            <Route path='/opdslip' element={<Opdslip />} />
            <Route path='/career' element={<Career />} />
+           <Route path='/focussector' element={<All_Sectors />} />
            <Route path='/consultancy' element={<Consultancy />} />
            <Route path='/complaints' element={<Complaints />} />
            <Route path='/policies' element={<Policies />} />
@@ -63,7 +64,7 @@ const App = () => {
            <Route path='/blogdetails' element={<BlogDetails />} />
            <Route path='/event_video' element={<EventVideo />} />
            <Route path='/gallery' element={<Gallery />} />
-           <Route path='/media_registration' element={<MediaRegistration />} />   
+           <Route path='/newsandupdate' element={<Newsandupdate />} />    
            <Route path='/membershipform' element={<MembershipForm />} />   
            <Route path='/aboutus' element={<About />} />
            <Route path='/contact' element={<Contact />} />
@@ -75,6 +76,7 @@ const App = () => {
            <Route path='/member_details' element={<MemberDetails />} />
            <Route path='/our_team' element={<Ourteam />} />
            <Route path='/leadership' element={<Leadership />} />
+           <Route path='/stakesholder' element={<Stakesholder />} />
        </Routes>
        <Footer />
       

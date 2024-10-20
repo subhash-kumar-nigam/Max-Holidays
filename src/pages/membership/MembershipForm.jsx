@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Head from '../../components/Head';
 
 const MembershipForm = () => {
@@ -22,13 +22,16 @@ const MembershipForm = () => {
     }
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>
       <Head pageheading="Register Now" />
       <div className='container my-5'>
-        <h2 className='administrativemain text-center'>Are you a Ayush Doctor/Institution/Manufacturer / Traders?</h2>
-        <h3 className=' administrativesub fs-5 pt-3 text-center'>Join the ‘ Integrated Ayush Council’ partner experts panel to build your brand and grow your business today!</h3>
+        <h2 className='administrativemain text-center'>Are you a SYHO Doctor/Institution/Manufacturer / Traders?</h2>
+        <h3 className=' administrativesub fs-5 pt-3 text-center'>Join the ‘Shri Yog Health Orginization’ partner experts panel to build your brand and grow your business today!</h3>
 
         <div className="my-5 py-5">
           <div className="col-12 ">
@@ -36,41 +39,30 @@ const MembershipForm = () => {
               <div className="col-lg-6 genralbackground ">
                 <div className="p-5">
                   <h3 className=" text-white mb-5 formheading">General Infomation</h3>
-                  <div className="row mb-5">
+                  <div className="row mb-3">
                     <div className="col-12">
-                      <label className="form-label genralflabel text-white" for="title">Title</label>
-                      <input type="text" id="title" className="form-control genralinputs" />
+                      <input type="text" id="title" placeholder='Title' className="form-control donationform genralinputs" />
                     </div>
                   </div>
-                  <div className="row mb-5">
+                  <div className="row mb-3">
                     <div className="col-12 ">
-                      <div data-mdb-input-init className="form-outline">
-                        <label className="form-label text-white genralflabel" for="name">Full Name </label>
-                        <input type="text" id="name" className="form-control genralinputs" />
-                      </div>
+                        <input type="text" id="name" placeholder='Full Name ' className="form-control donationform genralinputs" />
                     </div>
                   </div>
-                  <div className="row mb-5">
+                  <div className="row mb-3">
                     <div className="col-12">
-                      <label className="form-label text-white genralflabel" for="description">Description</label>
-                      <div data-mdb-input-init className="form-outline">
-                        <textarea type="text" id="description" rows={3} className="form-control genralinputs" />
-                      </div>
+                        <textarea type="text" id="description" placeholder='Description' rows={3} className="form-control donationform genralinputs" />
                     </div>
                   </div>
 
-                  <div className="row mb-5">
+                  <div className="row mb-3">
                     <div className="col-12 ">
-                      <div data-mdb-input-init className="form-outline">
-                        <label className="form-label text-white genralflabel" for="tagline">Tagline</label>
-                        <input type="text" id="tagline" className="form-control genralinputs" />
-                      </div>
+                        <input type="text" id="tagline" placeholder='Tagline' className="form-control donationform genralinputs" />
                     </div>
                   </div>
-                  <div className="row mb-5">
+                  <div className="row mb-3">
                     <div className="col-12">
-                      <label className="form-label text-white genralflabel" for="tagline">Location</label>
-                      <select className="form-select genralselect" aria-label="Select Position">
+                      <select className="form-select donationform genralselect" aria-label="Select Position">
                         <option value="" disabled selected>Select Location</option>
                         <option value="Andhra Pradesh">Andhra Pradesh</option>
                         <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -90,10 +82,9 @@ const MembershipForm = () => {
 
                     </div>
                   </div>
-                  <div className="row mb-5">
+                  <div className="row mb-3">
                     <div className="col-12">
-                      <label className="form-label text-white genralflabel" for="tagline">Tags</label>
-                      <select className="form-select genralselect" aria-label="Select Position">
+                      <select className="form-select donationform genralselect" aria-label="Select Position">
                         <option value="" disabled selected>Select a Tag</option>
                         <option value="Ayurveda">Ayurveda</option>
                         <option value="Homeopathy">Homeopathy</option>
@@ -108,9 +99,8 @@ const MembershipForm = () => {
 
                   <div className="row ">
                     <div className="col-12 ">
-                      <label className="form-label text-white genralflabel" for="category">Category</label>
-                      <select className="form-select genralselect" aria-label="Select Position">
-                        <option value="" disabled selected>Select a Tag</option>
+                      <select className="form-select  donationform genralselect" aria-label="Select Position">
+                        <option value="" disabled selected>Select a Categories</option>
                         <option value="Arthritis">Arthritis</option>
                         <option value="Ayurveda">Ayurveda</option>
                         <option value="Ayush Clinics">Ayush Clinics</option>
@@ -149,49 +139,34 @@ const MembershipForm = () => {
                   <h3 className=" formheading mb-5 ">Contact Details</h3>
                   <div className='row mb-4'>
                     <div className="col-12 ">
-                      <label className="form-label genralflabel" for="address">Address</label>
-                      <input type="text" id="address" className="form-control  contactinputs" />
+                      <input type="text" id="address" placeholder='Address' className="form-control  contactinputs" />
                     </div>
                   </div>
                   <div className="row mb-4">
                     <div className="col-12">
-                      <label className="form-label genralflabel" for="zipcode">Zip/Post code</label>
-                      <input type="text" id="zipcode" className="form-control contactinputs" />
+                      <input type="text" id="zipcode" placeholder='Zip/Post code' className="form-control contactinputs" />
                     </div>
                   </div>
                   <div className='row mb-4'>
                     <div className="col-6">
-                      <label className="form-label genralflabel" for="Phone1">Phone</label>
-                      <input type="text" id="phone1" className="form-control contactinputs" />
+                      <input type="text" id="phone1" placeholder='Phone' className="form-control contactinputs" />
                     </div>
-
                     <div className="col-6">
-                      <label className="form-label genralflabel" for="Phone2">Phone 2</label>
-                      <input type="text" id="phone2" className="form-control contactinputs" />
-                    </div>
-                  </div>
-
-                  <div className="row mb-4">
-                    <div className="col-12">
-                      <label className="form-label genralflabel" for="fax">Fax</label>
-                      <input type="text" id="fax" className="form-control contactinputs" />
+                      <input type="text" id="fax" placeholder='Fax' className="form-control contactinputs" />
                     </div>
                   </div>
                   <div className="row mb-4">
                     <div className="col-12">
-                      <label className="form-label genralflabel" for="email">Email</label>
-                      <input type="text" id="email" className="form-control contactinputs" />
+                      <input type="text" id="email" placeholder='Email' className="form-control contactinputs" />
                     </div>
                   </div>
                   <div className='row mb-4'>
                     <div className="col-12 ">
-                      <label className="form-label genralflabel" for="website">Website</label>
-                      <input type="text" id="website" className="form-control contactinputs" />
+                      <input type="text" id="website" placeholder='Website' className="form-control contactinputs" />
                     </div>
                   </div>
                   <div className='row mb-4'>
                     <div className="col-12">
-                      <label className="form-label genralflabel" htmlFor="social">Social Info</label>
                       {socialLinks.map((link, index) => (
                         <div key={link.id} className="input-group mb-2">
                           <input
@@ -218,8 +193,8 @@ const MembershipForm = () => {
                     </div>
                   </div>
                   <div className='row mb-4'>
-                    <div className="mb-4">
-                      <label className="form-label genralflabel" for="imagevideo">Image/Video</label>
+                    <div className="">
+                      {/* <label className="form-label genralflabel" for="imagevideo">Image/Video</label> */}
                       <input type="file" id="imagevideo" className="form-control contactinputs" />
                     </div>
                   </div>
@@ -230,8 +205,7 @@ const MembershipForm = () => {
                       site.
                     </label>
                   </div>
-                  <button type="button" data-mdb-button-init data-mdb-ripple-init className="btn btn-light btn-lg"
-                    data-mdb-ripple-color="dark">Submit</button>
+                  <button type="submit"  className="submitbtn">Submit</button>
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import iac from '../Assets/images/iac.webp'
+import iac from '../Assets/images/logo.png'
 // import  GoogleTranslateDropdown from './GoogleTranslateDropdown'
 const Header = () => {
     return (
@@ -12,19 +12,19 @@ const Header = () => {
                         <div className="d-flex flex-wrap">
                         {/* <GoogleTranslateDropdown /> */}
                             <div className="border-end border-white pe-3">
-                                <Link to="/" className="text-white contactnumber text-decoration-none"><i className="fas fa-map-marker-alt text-white me-2"></i>Find A Location</Link>
+                                <Link to="https://maps.app.goo.gl/2abNejJfH9MuzGAN9" target='_blanck' className="text-white contactnumber text-decoration-none"><i className="fas fa-map-marker-alt text-white me-2"></i>Find A Location</Link>
                             </div>
                             <div className="ps-3">
-                                <Link to="mailto:pathakdrraghav77@gmail.com" className="text-white contactnumber text-decoration-none"><i className="fas fa-envelope text-white me-2"></i>pathakdrraghav77@gmail.com</Link>
+                                <Link to="mailto:syhoindia@gmail.com" className="text-white contactnumber text-decoration-none"><i className="fas fa-envelope text-white me-2"></i>syhoindia@gmail.com</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-4 text-center text-lg-end">
                         <div className="d-flex justify-content-end">
-                            <div className="d-flex border-end border-white pe-3">
-                                <Link className="btn p-0 text-white me-3" to="#"><i className="fab fa-facebook-f"></i></Link>
-                                <Link className="btn p-0 text-white me-3" to="#"><i className="fab fa-twitter"></i></Link>
-                                <Link className="btn p-0 text-white me-3" to="#"><i className="fab fa-instagram"></i></Link>
+                            <div className="d-flex  pe-3">
+                                <Link className="btn p-0 text-white me-3" to="https://www.facebook.com/syhokhajuraho?mibextid=ZbWKwL" target='_blank'><i className="fab fa-facebook-f"></i></Link>
+                                <Link className="btn p-0 text-white me-3" to="https://wa.me/9584284411" target="_blank" ><i className="fab fa-whatsapp"></i></Link>
+                                <Link className="btn p-0 text-white me-3" to="https://www.instagram.com/syhokhajuraho/" target='_blank'><i className="fab fa-instagram"></i></Link>
                                 <Link className="btn p-0 text-white me-0" to="#"><i className="fab fa-linkedin-in"></i></Link>
                             </div>
                            
@@ -57,32 +57,36 @@ const Header = () => {
                             Administrative
                                 <div className="dropdown-menu">
                                     <Link to="/leadership" className="dropdown-item">Leadership</Link>
-                                    <Link to="/governing_body" className="dropdown-item">Governing Body</Link>  
+                                    {/* <Link to="/governing_body" className="dropdown-item">Governing Body</Link>   */}
                                     <Link to="/allmember" className="dropdown-item">All Members</Link>                                                                  
-                                    <Link to="/our_team" className="dropdown-item">Our team</Link>                       
+                                    {/* <Link to="/our_team" className="dropdown-item">Our team</Link>                        */}
                                 </div>
                             </div>
                             <Link to="/aboutus" className="nav-item nav-link">About</Link>
+                            <Link to="/focussector" className="nav-item nav-link">Sectors</Link>
                             <div className="nav-item dropdown">                            
                                 Services                               
                                 <div className="dropdown-menu">
                                     <Link to="/career" className="dropdown-item">Career</Link>
                                     <Link to="/consultancy" className="dropdown-item">Consultancy</Link>
-                                    <Link to="/complaints" className="dropdown-item">Complaints</Link>
-                                    <Link to="/policies" className="dropdown-item">Policies</Link>
+                                    {/* <Link to="/complaints" className="dropdown-item">Complaints</Link> */}
+                                    {/* <Link to="/policies" className="dropdown-item">Policies</Link> */}
                                 </div>
                             </div>
                             <div className="nav-item dropdown">
                                    Membership
                                 <div className="dropdown-menu">
+                                            <Link to="/membership_registration" className="dropdown-item"> About Membership </Link>
+                                <Link to="/membershipform" className="dropdown-item">Membership Form</Link>                 
                                     <Link to="/individual" className="dropdown-item">Individual / Practitioners</Link>
                                     <Link to="/institutions" className="dropdown-item">Institutions/ Industries</Link>
-                                    <Link to="/products" className="dropdown-item">Products</Link>
-                                    <Link to="/membershipform" className="dropdown-item">Membership Form</Link>
-                                    <Link to="/membership_registration" className="dropdown-item">Membership Registration</Link>
+                                    {/* <Link to="/products" className="dropdown-item">Products</Link> */}
+                                   
                                 </div>
                             </div>
-                            <div className="nav-item dropdown">
+
+                            {/* <Link to="/published_news" className="nav-item nav-link">Blogs</Link> */}
+                            {/* <div className="nav-item dropdown">
                                 Activities
                                 <div className="dropdown-menu">
                                     <Link to="/events" className="dropdown-item">Events</Link>
@@ -90,16 +94,18 @@ const Header = () => {
                                     <Link to="/mou" className="dropdown-item">MOU</Link>
                                     <Link to="/news" className="dropdown-item">News</Link>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="nav-item dropdown">
                                    Media
                                 <div className="dropdown-menu">
                                     <Link to="/press_release" className="dropdown-item">Press Release</Link>
-                                    <Link to="/event_news" className="dropdown-item">Event News</Link>
-                                    <Link to="/published_news" className="dropdown-item">Published News</Link>
+                                    {/* <Link to="/event_news" className="dropdown-item">Event News</Link> */}
+                                    {/* <Link to="/published_news" className="dropdown-item">Published News</Link> */}
+
                                     <Link to="/event_video" className="dropdown-item">Event Video</Link>
                                     <Link to="/gallery" className="dropdown-item">Gallery</Link>
-                                    <Link to="/media_registration" className="dropdown-item">Media Registration</Link>
+                                    <Link to="/newsandupdate" className="dropdown-item">News And Updates</Link>
+                                    {/* <Link to="/media_registration" className="dropdown-item">Media Registration</Link> */}
                                 </div>
                             </div>
                             <Link to="/contact" className="nav-item nav-link">Contact</Link>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useEffect} from 'react';
 import CenterHeading from '../../components/CenterHeading'
 import Head from '../../components/Head'
 import slider1 from '../../Assets/images/press1.webp'
@@ -14,7 +14,10 @@ const PressRelease = () => {
     setIsExpanded(!isExpanded);
   };
 
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div>
       <Head pageheading="Press Release" />

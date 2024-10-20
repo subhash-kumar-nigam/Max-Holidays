@@ -5,7 +5,7 @@ const Marquee = () => {
   return (
     <div className="marquee">
       <div className="marquee-content">
-        <p>This is a scrolling marquee effect in React!</p>
+        <p>Welcome to Shri Yog Health Orginization Madhaya Pradesh</p>
       </div>
     </div>
   );

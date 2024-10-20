@@ -1,7 +1,9 @@
-import React from 'react';
+import React , {useEffect} from 'react';
 import Head from '../../components/Head';
 
+
 const MembershipRegistration = () => {
+
 
   const membershipBenefits = [
     { key: 'Assured seat in the National Board / Managing Committee', patron: '✓', corporate: '✓', associate: '✓' },
@@ -35,13 +37,17 @@ const membershipFees = [
   { category: 'Overseas Membership', amount: '$ 1000/-' }
 ];
 
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
   return (
     <div>
-      <Head pageheading="Membership Registration" />
+      <Head pageheading=" About Membership" />
       <div className='container my-5 py-5'>
-        <h1 className="pb-5 text-center mainheading">Integrated Ayush Council Membership Registration</h1>
-        <h2 className="liheading pb-5 administrativesub">Objectives & Mission of Membership Registration</h2>
-        <div className='row'>
+        <h1 className="pb-5 text-center mainheading">Shri Yog Health Orginization Membership </h1>
+        {/* <h2 className="liheading pb-5 administrativesub">Objectives & Mission of Membership Registration</h2> */}
+        {/* <div className='row'>
           <div className="col-md-6 col-style-1">
             <h3 className='liheading'><strong>Our Mission</strong></h3>
             <ul className="ul-style">
@@ -65,7 +71,7 @@ const membershipFees = [
               <li>Organize Expo's, Trade Fairs, Summits/Meets, Conferences, Round Tables Webinar’s, Web-conferences, Business delegation, Road shows, workshops & Award Functions in India & abroad</li>
             </ul>
           </div>
-        </div>
+        </div> */}
         <div className='row py-5'>
   <div className='col'>
     <h2 className="liheading pb-5 administrativesub"> Membership Terms & Conditions</h2>

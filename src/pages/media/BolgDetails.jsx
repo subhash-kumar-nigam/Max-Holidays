@@ -1,6 +1,12 @@
-import React from 'react';
+import React , {useEffect} from 'react';
 import Head from '../../components/Head';
+
 const BlogDetails = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div>
         <Head pageheading="Blog Details" />

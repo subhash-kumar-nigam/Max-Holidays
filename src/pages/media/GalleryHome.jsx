@@ -1,80 +1,44 @@
 import React from 'react';
-import g1 from '../../Assets/images/g1.webp';
-import g2 from '../../Assets/images/g2.webp';
-import g3 from '../../Assets/images/g3.webp';
-import g4 from '../../Assets/images/g4.webp';
-import g5 from '../../Assets/images/g5.webp';
-import g6 from '../../Assets/images/g6.webp';
-import g7 from '../../Assets/images/g7.webp';
-import g8 from '../../Assets/images/g8.webp';
-
+import gallery1 from '../../Assets/images/g1.jpg'
+import gallery2 from '../../Assets/images/g2.jpg'
+import gallery3 from '../../Assets/images/g3.jpg'
+import gallery4 from '../../Assets/images/g4.jpg'
+import gallery5 from '../../Assets/images/g5.jpg'
+import gallery6 from '../../Assets/images/g6.jpg'
+import gallery7 from '../../Assets/images/g10.jpg'
+import gallery8 from '../../Assets/images/g8.jpg'
 const GalleryHome = () => {
+    const images = [
+        gallery1,
+        gallery2,
+        gallery3,
+        gallery4,
+        gallery5,
+        gallery6,
+        gallery7,
+        gallery8,
+      
+    ];
+
+    // Use the slice method to limit to the first 8 images
+    const visibleImages = images.slice(0, 8);
+
     return (
-        <div>
-            <div className="container-fluid bg-white py-5 wow fadeInUp">
-                <div className="container py-5" >
+        <div className=''>
+            <div className='bg-light py-5'>
+                <div className='container  py-5'>
                     <div className="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style={{ maxWidth: "800px" }}>
-                        <h4 className="mainheading">Our Latest Photos</h4>
-                        <h3 className="subheading mb-4">Capturing Moments That Define Our Journey</h3>
+                        <h4 className="mainheading">Gallery</h4>
+                        <h3 className="subheading mb-4">Capturing Our Journey of Service and Compassion</h3>
                     </div>
                     <div className="row">
-                        <div className="col-md-3 ftco-animate">
-                            <a href={g1} className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: `url(${g1})` }}>
-                                <div className="icon mb-4 d-flex align-items-center justify-content-center">
-                                    <span className="icon-instagram"></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col-md-3 ftco-animate">
-                            <a href={g2} className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: `url(${g2})` }}>
-                                <div className="icon mb-4 d-flex align-items-center justify-content-center">
-                                    <span className="icon-instagram"></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col-md-3 ftco-animate">
-                            <a href={g3} className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: `url(${g3})` }}>
-                                <div className="icon mb-4 d-flex align-items-center justify-content-center">
-                                    <span className="icon-instagram"></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col-md-3 ftco-animate">
-                            <a href={g4} className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: `url(${g4})` }}>
-                                <div className="icon mb-4 d-flex align-items-center justify-content-center">
-                                    <span className="icon-instagram"></span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div className="col-md-3 ftco-animate">
-                            <a href={g5} className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: `url(${g5})` }}>
-                                <div className="icon mb-4 d-flex align-items-center justify-content-center">
-                                    <span className="icon-instagram"></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col-md-3 ftco-animate">
-                            <a href={g6} className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: `url(${g6})` }}>
-                                <div className="icon mb-4 d-flex align-items-center justify-content-center">
-                                    <span className="icon-instagram"></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col-md-3 ftco-animate">
-                            <a href={g7} className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: `url(${g7})` }}>
-                                <div className="icon mb-4 d-flex align-items-center justify-content-center">
-                                    <span className="icon-instagram"></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col-md-3 ftco-animate">
-                            <a href={g8} className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: `url(${g8})` }}>
-                                <div className="icon mb-4 d-flex align-items-center justify-content-center">
-                                    <span className="icon-instagram"></span>
-                                </div>
-                            </a>
-                        </div>
+                        {visibleImages.map((image, index) => (
+                            <div className="col-lg-3 col-md-4 col-xs-6 pb-4 thumb" key={index}>
+                                <a className="thumbnail" href="#" data-toggle="modal" data-target="#image-gallery">
+                                    <img className="img-thumbnail" src={image} alt={`Image ${index + 1}`} />
+                                </a>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

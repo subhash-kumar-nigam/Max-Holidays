@@ -45,7 +45,7 @@ const OurPartners = () => {
 
     return (
         <div>
-            <div className="container-fluid bg-light pt-5 wow fadeInUp">
+            <div className="container-fluid pt-5 wow fadeInUp">
                 <div className="container pt-5" >
                     <div className="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style={{ maxWidth: "800px" }}>
                         <h4 className="mainheading">Our Partners</h4>

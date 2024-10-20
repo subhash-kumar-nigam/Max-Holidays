@@ -1,13 +1,18 @@
-import React from 'react';
+import React , {useEffect} from 'react';
 import Head from '../../components/Head';
 const MemberDetails = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
         <Head pageheading="Blog Details" />
       <div className="blog-single my-5">
         <div className="container">
           <div className="row align-items-start">
-            <div className="col-lg-8 m-15px-tb">
+            <div className="col-lg-12 m-15 px-tb">
               <article className="article">
                 <div className="article-img">
                   <img
@@ -17,15 +22,14 @@ const MemberDetails = () => {
                   />
                 </div>
                 <div className="article-title pt-4">
-                
-                  <h2>They Now Bade Farewell To The Kind But Unseen People</h2>
-                  <div className="media">
-                 
+                  <h1 className="mb-0 administrativemain pb-2 text-capitalize">Dr.Shishta Nadda Basu</h1>
+                  <h3 className='administrativesub pt-2'>Member of National Advisory committee of Integrated Ayush Council</h3>
+                  {/* <div className="media">
                     <div className="media-body">
                       <label>Rachel Roth</label>
                       <span>26 FEB 2020</span>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="article-content">
                   <p className='text-justify'>
@@ -120,7 +124,7 @@ const MemberDetails = () => {
               
            
               {/* Latest Post */}
-              <div className="widget widget-latest-post">
+              {/* <div className="widget widget-latest-post">
                 <div className="widget-title">
                   <h3>Latest Post</h3>
                 </div>
@@ -210,7 +214,7 @@ const MemberDetails = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
               {/* End Latest Post */}
 
             </div>

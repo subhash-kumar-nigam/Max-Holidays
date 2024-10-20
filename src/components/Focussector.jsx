@@ -1,13 +1,22 @@
 import React from 'react'
-import f1 from '../Assets/images/f1.jpg'
-import f2 from '../Assets/images/f2.jpg'
+import { useNavigate } from 'react-router-dom';
+import { Link} from 'react-router-dom'
+import f1 from '../Assets/images/g1.jpg'
+import f2 from '../Assets/images/g4.jpg'
 import f3 from '../Assets/images/f3.jpg'
-import f4 from '../Assets/images/f4.jpg'
+import f4 from '../Assets/images/g17.jpg'
 import f5 from '../Assets/images/f5.jpg'
-import f6 from '../Assets/images/f6.jpg'
+import f6 from '../Assets/images/yoga.png'
 import f7 from '../Assets/images/f7.jpg'
 import f8 from '../Assets/images/f8.png'
 const Focussector = () => {
+    const navigate = useNavigate();
+
+    const handleNavigation = () => {
+        navigate('/focussector'); 
+      };
+
+      
   return (
     <div>
       
@@ -26,7 +35,7 @@ const Focussector = () => {
                             <div className="service-content p-4">
                                 <div className="service-content-inner">
                                       <h3 className="d-inline-block h4 mb-4">Diet Food and Nutrition</h3>
-                                    <a className="btn btn-focus  rounded-pill py-2 px-4" href="#">Read More</a>
+                                    <button onClick={handleNavigation} className="btn btn-focus  rounded-pill py-2 px-4" >Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -39,7 +48,7 @@ const Focussector = () => {
                             <div className="service-content p-4">
                                 <div className="service-content-inner">
                                       <h3 className="d-inline-block h4 mb-4">Modern Lifestyle, Health and Fitness</h3>
-                                    <a className="btn btn-focus rounded-pill py-2 px-4" href="#">Read More</a>
+                                    <button onClick={handleNavigation} className="btn btn-focus  rounded-pill py-2 px-4" >Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -52,7 +61,7 @@ const Focussector = () => {
                             <div className="service-content p-4">
                                 <div className="service-content-inner">
                                       <h3 className="d-inline-block h4 mb-4">Ayurveda and Naturopathy</h3>
-                                    <a className="btn btn-focus rounded-pill py-2 px-4" href="#">Read More</a>
+                                    <button onClick={handleNavigation} className="btn btn-focus  rounded-pill py-2 px-4" >Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -65,7 +74,7 @@ const Focussector = () => {
                             <div className="service-content p-4">
                                 <div className="service-content-inner">
                                       <h3 className="d-inline-block h4 mb-4">Fitness & Wellbeing Consultancy</h3>
-                                    <a className="btn btn-focus rounded-pill py-2 px-4" href="#">Read More</a>
+                                    <button onClick={handleNavigation} className="btn btn-focus  rounded-pill py-2 px-4" >Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +91,7 @@ const Focussector = () => {
                             <div className="service-content p-4">
                                 <div className="service-content-inner">
                                       <h3 className="d-inline-block h4 mb-4">Aromatherapy and Beauty Products</h3>
-                                    <a className="btn btn-focus  rounded-pill py-2 px-4" href="#">Read More</a>
+                                    <Link className="btn btn-focus  rounded-pill py-2 px-4" to="">Read More</Link>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +104,7 @@ const Focussector = () => {
                             <div className="service-content p-4">
                                 <div className="service-content-inner">
                                       <h3 className="d-inline-block h4 mb-4">Yoga and Holistic Healing</h3>
-                                    <a className="btn btn-focus rounded-pill py-2 px-4" href="#">Read More</a>
+                                    <button onClick={handleNavigation} className="btn btn-focus  rounded-pill py-2 px-4" >Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +117,7 @@ const Focussector = () => {
                             <div className="service-content p-4">
                                 <div className="service-content-inner">
                                     <h3 className="d-inline-block h4 mb-4">Technology, Startup and Health App</h3>
-                                    <a className="btn btn-focus rounded-pill py-2 px-4" href="#">Read More</a>
+                                    <button onClick={handleNavigation} className="btn btn-focus  rounded-pill py-2 px-4" >Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -121,15 +130,15 @@ const Focussector = () => {
                             <div className="service-content p-4">
                                 <div className="service-content-inner">
                                       <h3 className="d-inline-block h4 mb-4">Siddha/ Unani</h3>
-                                    <a className="btn btn-focus rounded-pill py-2 px-4" href="#">Read More</a>
+                                    <button onClick={handleNavigation} className="btn btn-focus  rounded-pill py-2 px-4" >Read More</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div className="col-12 text-center mt-5 pt-5 wow fadeInUp" data-wow-delay="0.2s">
-                        <a className="btn btn-primary rounded-pill py-3 px-5" href="#">More info</a>
-                    </div>
+                    {/* <div className="col-12 text-center mt-5 pt-5 wow fadeInUp" data-wow-delay="0.2s">
+                        <Link className="btn btn-primary rounded-pill py-3 px-5" to="/focussector">More info</Link>
+                    </div> */}
                 </div>
             </div>
         </div>
