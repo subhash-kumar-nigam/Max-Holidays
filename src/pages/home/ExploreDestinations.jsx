@@ -24,7 +24,7 @@ const ExploreDestinations = () => {
         <div className="w-24 h-1 bg-teal-300 mt-3 mb-6 mx-auto"></div>
 
         {/* TEXT */}
-        <p className=" leading-relaxed text-[17px] text-center max-w-3xl mx-auto mb-8">
+        <p className=" leading-relaxed text-[17px] text-center max-w-3xl mx-auto mb-8 text-justify">
           Incredible India, the most glorious land of the east, the country that
           is known for its diverse culture, old age history, rich flora and
           fauna, simple lifestyle, welcoming people and intensely beautiful
